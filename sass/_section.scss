@@ -1,0 +1,53 @@
+.section {
+  height: 24rem;
+  width: 108rem;
+  margin: 1rem auto;
+  //   margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  &__container {
+    background-color: var(--color-grey-5);
+    box-shadow: var(--shadow-light);
+    width: 20rem;
+    height: 24rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__photo {
+      width: 100%;
+      height: 12rem;
+      object-fit: cover;
+      //   filter: brightness(50%);
+    }
+    &__inner {
+      display: flex;
+      align-items: center;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+
+      &__icon {
+        width: 2.5rem;
+        height: 2.5rem;
+        fill: var(--color-orange-1);
+      }
+      &__head {
+        font-size: 1.4rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-left: 1rem;
+        background-image: linear-gradient(
+          to right,
+          var(--color-green-1),
+          var(--color-orange-2)
+        );
+        background-clip: text;
+        color: transparent;
+      }
+    }
+    &__outer {
+      color: var(--color-grey-1);
+      font-weight: 600;
+      font-size: 1.3rem;
+    }
+  }
+}

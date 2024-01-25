@@ -1,0 +1,86 @@
+.nav {
+  border-bottom: 1px solid var(--color-grey-4);
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  &__left-container {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+
+    &__icon {
+      margin-left: 3rem;
+      margin-right: 1rem;
+      fill: var(--color-red-1);
+      width: 5rem;
+      height: 5rem;
+    }
+    &__logo {
+      font-size: 1.7rem;
+      font-weight: 800;
+      //   color: var(--color-grey-1);
+      background-image: linear-gradient(
+        to right,
+        var(--color-green-1),
+        var(--color-orange-3)
+      );
+      background-clip: text;
+      color: transparent;
+    }
+  }
+  &__middle-container {
+    // backface-visibility: hidden;
+    margin-right: 7rem;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    &__list {
+      text-decoration: none;
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: var(--color-grey-1);
+      &:hover {
+        border-bottom: 2px solid var(--color-orange-1);
+      }
+    }
+  }
+  &__right-container {
+    margin-right: 2rem;
+    gap: 1.9rem;
+    display: flex;
+    align-items: center;
+    &__account {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      &__icon {
+        fill: var(--color-orange-1);
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+      &__user {
+        font-size: 1.3rem;
+        color: var(--color-grey-1);
+        margin-left: 0.9rem;
+      }
+    }
+    &__cart {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      &__icon {
+        fill: var(--color-orange-1);
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+      &__name {
+        font-size: 1.3rem;
+        color: var(--color-grey-1);
+        margin-left: 0.9rem;
+      }
+    }
+  }
+}
+.bottom-line {
+  border-bottom: 2px solid var(--color-orange-1);
+}
